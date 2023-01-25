@@ -143,7 +143,10 @@ class _HomePageState extends State<HomePage> {
                             fontSize: 20, fontWeight: FontWeight.w300),
                       ),
                     ))
-          : const Center(child: CircularProgressIndicator()),
+          : Center(
+              child: CircularProgressIndicator(
+              color: primaryColor,
+            )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
